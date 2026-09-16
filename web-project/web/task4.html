@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 - Table & Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="main-header">
+    <h1>Task 4: Table and Form</h1>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="task1.html">Task 1</a>
+        <a href="task2.html">Task 2</a>
+        <a href="task3.html">Task 3</a>
+        <a href="task4.html" class="active">Task 4</a>
+    </nav>
+</header>
+
+<main class="content-container">
+    <h2 id="special-heading" style="text-align: center;">Student Grades Report</h2>
+
+    <table class="styled-table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Grade</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Alihan</td>
+            <td rowspan="2">Software Engineering</td>
+            <td>90</td>
+        </tr>
+        <tr class="highlight-row">
+            <td>Muratbek</td>
+            <td>98</td>
+        </tr>
+        <tr>
+            <td>Dias</td>
+            <td>Database Management</td>
+            <td>85</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <hr style="margin: 40px 0; border: 0; border-top: 1px solid #ddd;">
+
+    <h2 style="text-align: center; color: #2c3e50;">Feedback Form</h2>
+    <form class="styled-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@astanait.edu.kz" required>
+
+        <label for="role">Role:</label>
+        <select id="role" name="role">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label style="margin-top:15px;">Do you like this assignment?</label>
+        <input type="radio" id="yes" name="feedback" value="yes" checked>
+        <label for="yes" style="display:inline; font-weight:normal; margin-right: 15px;">Yes</label>
+        <input type="radio" id="no" name="feedback" value="no">
+        <label for="no" style="display:inline; font-weight:normal;">No</label>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Your feedback..."></textarea>
+
+        <button type="submit" class="submit-btn">Submit Feedback</button>
+    </form>
+</main>
+
+<footer class="main-footer">
+    <p>&copy; 2026 Table & Form Lab</p>
+</footer>
+</body>
+</html>
